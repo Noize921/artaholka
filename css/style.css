@@ -38,3 +38,18 @@ body {
 .footer-copyright {
     background-color: #232323 !important;
 }
+
+.username {
+    color: white;
+    vertical-align: middle !important;
+}
+
+.add-icon {
+    color: #36c439;
+    font-size: 36px;
+}
+
+.add-icon:hover {
+    color: #3bd33e;
+    text-shadow: 1px 1px 1px #ccc;
+}
