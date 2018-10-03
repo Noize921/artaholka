@@ -53,3 +53,8 @@ body {
     color: #3bd33e;
     text-shadow: 1px 1px 1px #ccc;
 }
+
+.sold-card:hover, .bought-card:hover {
+    border-color: #232323;
+    background-color: #fcfcfc;
+}
