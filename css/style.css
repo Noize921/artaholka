@@ -57,4 +57,9 @@ body {
 .sold-card:hover, .bought-card:hover {
     border-color: #232323;
     background-color: #fcfcfc;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.profile-product-card {
+    width: 10rem;
 }
