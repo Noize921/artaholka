@@ -1,8 +1,14 @@
+
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
+}
+
+* { 
+    box-sizing: border-box;
 }
 
 #search-bar {
@@ -38,3 +44,101 @@ body {
 .footer-copyright {
     background-color: #232323 !important;
 }
+
+/* Product cards */
+
+.card>img {
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 150px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-price { 
+    color: grey;
+    font-size: 16px;
+}
+
+.add-to-card {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.add-to-card:hover {
+    opacity: 0.7;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide-box {
+    display: none;
+}
+
+.slideshow-card {
+    width: 20%;
+}
+
+.slideshow-card>.card-body>.card-text {
+    font-size: 12px;
+}
+
+.prev, .next { 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    margin-top: -22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+      opacity: 0.7;
+  }
+
+/* Fading animation */
+
+.fade-effect {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
