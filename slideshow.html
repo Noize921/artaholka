@@ -18,8 +18,8 @@
             <div class="col align-self-center">
                  <div class="slideshow-container">
                         <div class="slide-box text-center fade-effect">
-                            <ul class="list-intline p-0">
-                                <li class="list-inline-item">
+                            <ul class="list-intline p-0 slides-list">
+                                <li class="list-inline-item slideshow-slide">
                                     <div class="card">
                                         <img src="img/nemo.jpeg" alt="Nemo">
                                         <h5 class="card-title">Product 1</h5>
@@ -27,7 +27,7 @@
                                     </div>
                                 </li>
         
-                                <li class="list-inline-item">
+                                <li class="list-inline-item slideshow-slide">
                                     <div class="card">
                                         <img src="img/nemo.jpeg" alt="Nemo">
                                         <h5 class="card-title">Product 1</h5>
@@ -35,7 +35,7 @@
                                     </div>
                                 </li>
         
-                                <li class="list-inline-item">
+                                <li class="list-inline-item slideshow-slide">
                                     <div class="card">
                                         <img src="img/nemo.jpeg" alt="Nemo">
                                         <h5 class="card-title">Product 1</h5>
@@ -43,7 +43,7 @@
                                     </div>
                                 </li>
         
-                                <li class="list-inline-item">
+                                <li class="list-inline-item slideshow-slide">
                                     <div class="card">
                                         <img src="img/nemo.jpeg" alt="Nemo">
                                         <h5 class="card-title">Product 1</h5>
@@ -51,7 +51,7 @@
                                     </div>
                                 </li>
         
-                                <li class="list-inline-item">
+                                <li class="list-inline-item slideshow-slide">
                                     <div class="card">
                                         <img src="img/nemo.jpeg" alt="Nemo">
                                         <h5 class="card-title">Product 1</h5>
@@ -60,94 +60,6 @@
                                 </li>
                             </ul>
                         </div>
-
-                        <div class="slide-box text-center fade-effect">
-                                <ul class="list-intline p-0">
-                                    <li class="list-inline-item">
-                                        <div class="card">
-                                            <img src="img/art1.jpg" alt="Nemo">
-                                            <h5 class="card-title">Product 1</h5>
-                                            <p class="card-price">€2.00</p>
-                                        </div>
-                                    </li>
-            
-                                    <li class="list-inline-item">
-                                        <div class="card">
-                                            <img src="img/art1.jpg" alt="Nemo">
-                                            <h5 class="card-title">Product 1</h5>
-                                            <p class="card-price">€2.00</p>
-                                        </div>
-                                    </li>
-            
-                                    <li class="list-inline-item">
-                                        <div class="card">
-                                            <img src="img/art1.jpg" alt="Nemo">
-                                            <h5 class="card-title">Product 1</h5>
-                                            <p class="card-price">€2.00</p>
-                                        </div>
-                                    </li>
-            
-                                    <li class="list-inline-item">
-                                        <div class="card">
-                                            <img src="img/art1.jpg" alt="Nemo">
-                                            <h5 class="card-title">Product 1</h5>
-                                            <p class="card-price">€2.00</p>
-                                        </div>
-                                    </li>
-            
-                                    <li class="list-inline-item">
-                                        <div class="card">
-                                            <img src="img/art1.jpg" alt="Nemo">
-                                            <h5 class="card-title">Product 1</h5>
-                                            <p class="card-price">€2.00</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="slide-box text-center fade-effect">
-                                    <ul class="list-intline p-0">
-                                        <li class="list-inline-item">
-                                            <div class="card">
-                                                <img src="img/art2.jpg" alt="Nemo">
-                                                <h5 class="card-title">Product 1</h5>
-                                                <p class="card-price">€2.00</p>
-                                            </div>
-                                        </li>
-                
-                                        <li class="list-inline-item">
-                                            <div class="card">
-                                                <img src="img/art2.jpg" alt="Nemo">
-                                                <h5 class="card-title">Product 1</h5>
-                                                <p class="card-price">€2.00</p>
-                                            </div>
-                                        </li>
-                
-                                        <li class="list-inline-item">
-                                            <div class="card">
-                                                <img src="img/art2.jpg" alt="Nemo">
-                                                <h5 class="card-title">Product 1</h5>
-                                                <p class="card-price">€2.00</p>
-                                            </div>
-                                        </li>
-                
-                                        <li class="list-inline-item">
-                                            <div class="card">
-                                                <img src="img/art2.jpg" alt="Nemo">
-                                                <h5 class="card-title">Product 1</h5>
-                                                <p class="card-price">€2.00</p>
-                                            </div>
-                                        </li>
-                
-                                        <li class="list-inline-item">
-                                            <div class="card">
-                                                <img src="img/art2.jpg" alt="Nemo">
-                                                <h5 class="card-title">Product 1</h5>
-                                                <p class="card-price">€2.00</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
                         
                         <div class="slideshow-arrow">
                             <a class="prev" onclick="changeSlide(-1)"><img src="img/left-arrow.svg" alt="Previous slide"></a>
@@ -162,7 +74,7 @@
 
      <script>
         var slideIndex = 1;
-        showSlides(slideIndex);
+        showSlides();
 
         function changeSlide(n) {
             showSlides(slideIndex += n);
@@ -172,23 +84,29 @@
             showSlides(slideIndex = n);
         }
 
-        function showSlides(n) {
+        function showSlides() {
             var i,
-                slides = document.getElementsByClassName("slide-box");
-            
-            if (n > slides.length) {
-                slideIndex = 1;
-            } 
-            
-            if (n < 1) {
-                slideIndex = slides.length
-            }
+                slides = document.getElementsByClassName("slides-list");
 
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none"; 
-            }
+                console.log(slides);
+
+                // for (let i = 0; i < slides.length; i++) {
+                //     slides[i].style.display = "block";
+                // }
             
-            slides[slideIndex - 1].style.display = "block"; 
+            // if (n > slides.length) {
+            //     slideIndex = 1;
+            // } 
+            
+            // if (n < 1) {
+            //     slideIndex = slides.length
+            // }
+
+            // for (i = 0; i < slides.length; i++) {
+            //     slides[i].style.display = "none"; 
+            // }
+            
+            // slides[slideIndex - 1].style.display = "block"; 
         }
      </script>
 </body>
