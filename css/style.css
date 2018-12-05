@@ -28,15 +28,6 @@ body {
     text-align: center;
 }
 
-.product-price {
-    font-weight: bold;
-    color:#5b5b5b; 
-}
-
-.product-card:hover {
-    border: 1px solid #167bff;
-}
-
 .footer { 
     background-color: #3d3d3d;
 }
@@ -103,11 +94,6 @@ body {
     margin: 0 auto;
 }
 
-
-/* .slideshow-slide {
-    display: none;
-} */
-
 .slide-box {
     width: 1000px;
     height: 200px;
@@ -152,18 +138,41 @@ body {
 
   /* Product description */
 
-  .product-description {
+.product-description {
     padding: 10px 10px 10px 10px;
   }
 
-  .product-image>img {
-    max-width: 95%;
-    max-height: auto;
+.product-name {
+    padding: 0 0 10px 0;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Constantia, sans-serif;
   }
 
-  .product-image:after {
-      position: absolute;
-      top: 80%;
-      right: 90%;
-      content: "10";
+.product-image {
+    text-align: center;
+}
+
+.product-image>img {
+    max-width: 95%;
+    max-height: auto;
+    box-shadow: 0 0 10px grey;
+  }
+
+.product-image::before {
+    position: absolute;
+    /* bottom: ; */
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: aquamarine;
+    z-index: 1;
+    content: "€3.1";
+  }
+
+.product-price>span {
+    color: grey;
+    font-size: 16px;
   }
