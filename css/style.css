@@ -160,9 +160,9 @@ body {
     box-shadow: 0 0 10px grey;
   }
 
-.product-image::before {
+/* .product-image::before {
     position: absolute;
-    /* bottom: ; */
+    bottom: 0;
     width: 100px;
     height: 60px;
     line-height: 60px;
@@ -170,9 +170,19 @@ body {
     background-color: aquamarine;
     z-index: 1;
     content: "€3.1";
-  }
+  } */
 
 .product-price>span {
     color: grey;
     font-size: 16px;
+  }
+
+  .product-price {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: aquamarine;
+    z-index: 1;
   }

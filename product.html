@@ -134,8 +134,8 @@
                 <div class="product-description">
                     <h2 class="product-name">Nemo Photography</h2>
                     <div class="product-image">
-                        <img src="img/art1.jpg" alt="Nemo">
-                        <!-- <div class="product-price"><span>€3.1</span></div> -->
+                        <img src="img/art1.jpg" alt="Nemo" id="p-image">
+                        <div class="product-price"><span>€3.1</span></div>
                     </div>
                     <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero possimus explicabo dolore quam quasi deserunt nemo ea consequuntur id dicta. Sint voluptatem dignissimos doloribus nostrum eos provident totam et atque quidem! Eius quia minima, nesciunt facilis quo dolore voluptate. Amet magnam quod ab minus veritatis mollitia soluta exercitationem distinctio? Officiis molestiae et neque illo odio, nam ut. Facilis deleniti voluptatum commodi accusamus! Dolore, architecto blanditiis!</p>
                 </div>
@@ -211,7 +211,14 @@
 
     <script>
         $(document).ready(function() {
-            var width;
+            var width,
+                height,
+                image = new Image();
+
+            image.src = $("#p-image").attr("src");
+
+            console.log(image.width);
+            console.log(image.height);
         });
     </script>
 
