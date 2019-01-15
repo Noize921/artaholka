@@ -138,51 +138,76 @@ body {
 
   /* Product description */
 
+.product-created-date {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.product-image {
+    height: 100%;
+    width: 100%;
+}
+
+ #parent-div {
+    overflow: hidden;
+ }
+
+.left-section{
+    height: 100%;
+    width: 100%;
+}  
+
+.product-image>img {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    max-width: 95%;
+    max-height: auto;
+    display: block;
+    box-shadow: 0 0 10px grey;
+}
+
 .product-description {
-    padding: 10px 10px 10px 10px;
+    padding-top: 15px;
+    font-size: 14px;
   }
 
 .product-name {
     padding: 0 0 10px 0;
-    margin-bottom: 18px;
-    text-align: center;
-    font-size: 32px;
+    text-align: left;
+    font-size: 24px;
     font-family: Constantia, sans-serif;
+    color: darkslategrey;
   }
 
-.product-image {
+
+.product-category>a {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-price>span {
+    color: darkslategrey;
+    font-size: 26px;
+}
+
+#amount {
+    width: 35px;
+    height: 35px;
     text-align: center;
 }
 
-.product-image>img {
-    max-width: 95%;
-    max-height: auto;
-    box-shadow: 0 0 10px grey;
-  }
+.product-author-label {
+    font-weight: bold;
+}
 
-/* .product-image::before {
-    position: absolute;
-    bottom: 0;
-    width: 100px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background-color: aquamarine;
-    z-index: 1;
-    content: "€3.1";
-  } */
+.product-author {
+    text-decoration: none;
+    font-style: italic;
+}
 
-.product-price>span {
-    color: grey;
-    font-size: 16px;
-  }
-
-  .product-price {
-    position: relative;
-    width: 100px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background-color: aquamarine;
-    z-index: 1;
-  }
+.product-author:hover {
+    text-decoration: none;
+}
