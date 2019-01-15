@@ -1,0 +1,75 @@
+.about-us {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pag-title {
+    text-align: center;
+    margin: 150px 0;
+}
+
+.about-section {
+    padding-bottom: 100px;
+}
+
+section h3 {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.overall {
+    background: #2e7ec9;
+    color: white;
+    padding: 40px;
+}
+
+.about-us ul li {
+    padding-bottom: 15px;
+}
+
+.profile-info {
+    width: 80%;
+    margin: auto;
+}
+
+.profile-info a {
+    display: inline;
+}
+
+.general-info {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.general-info img {
+    border-radius: 50%;
+}
+
+.detail-info section {
+    margin-bottom: 20px;
+}
+
+.user-info label {
+    display: block;
+    text-align: center;
+}
+
+.products-info {
+    text-align: center;
+    margin: 120px 0;
+}
+
+.edit-info label {
+    display: block;
+}
+
+form {
+    text-align: center;
+}
+
+.save {
+    margin: 50px 0;
+    border: none;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile - Artaholka</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-sm-3 ">
+        <div class="container" style="max-width: 90%;">
+            <a href="#" class="navbar-brand">Artaholka</a>
+            <form class="form-inline">
+                <input type="serch" class="form-control form-control" placeholder="Search" aria-label="Search" id="search-bar" style="max-width: 1000px;">
+            </form>
+
+            <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item mr-sm-4">
+                    <a href="#" class="nav-link btn btn-outline-info">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link btn btn-outline-danger">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+
+    <!-- CONTENT -->
+
+    <section class="profile-info">
+        <div class="general-info mb-5">
+            <h4 class="text-muted" style="font-style:italic; margin-bottom: 8%;">
+                <small>This profile page is visible only to you.</small>
+            </h4>
+            <img src="img/nemo.jpeg" alt="profile image" width="100" height="100">
+            <h3 class="mt-1">Username</h3>
+            <a href="edit-profile.html" class="nav-link btn btn-outline-info">Edit Profile</a>
+        </div>
+
+        <div class="detail-info">
+            <div class="info-card">
+                <h3 class="lead pl-2">Personal information</h3>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                        <label for="first-name" class="field-label">First Name:</label>
+                    </div>
+                    <div class="col-sm-auto pl-0">
+                        <p id="first-name" class="field-value">Polevoi</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                        <label for="last-name" class="field-label">Last Name:</label>
+                    </div>
+                    <div class="col-sm-auto pl-0">
+                        <p id="last-name" class="field-value">Vadim</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                        <label for="username" class="field-label">Username:</label>
+                    </div>
+                    <div class="col-sm-auto pl-0">
+                        <p id="username" class="field-value">noize921</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                        <label for="email" class="field-label">Email:</label>
+                    </div>
+                    <div class="col-sm-auto pl-0">
+                        <a href="mailto:" id="email" class="field-value">user@gmail.com</a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                        <label for="location" class="field-label">Location:</label>
+                    </div>
+                    <div class="col-sm-auto pl-0">
+                        <p id="location" class="field-value">Chișinău, Republic of Moldova</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                        <label for="website" class="field-label">Website:</label>
+                    </div>
+                    <div class="col-sm-auto pl-0">
+                        <a href="http://www.mocksite.com" id="website">http://www.mocksite.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card mt-4">
+                <h3 class="lead pl-2">Biography</h3>
+                <p class="text-justify p-5 bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium laborum autem qui pariatur nam vero rem saepe at ratione!</p>
+            </div>
+        </div>
+        
+        <section class="products-info">
+            <h1 class="lead display-4 text-center pb-5 pt-5">Your products</h1>
+            <div class="row justify-content-end mb-sm-3">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/nemo.jpeg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/art1.jpg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/art2.jpg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end mb-sm-3">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/nemo.jpeg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/art1.jpg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/art2.jpg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end mb-sm-3">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/nemo.jpeg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/art1.jpg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-img"><img src="img/art2.jpg" alt="Nemo"></div>
+                        <h4 class="card-name">Lorem, ipsum dolor.</h4>
+                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident, excepturi.</p>
+                        <p class="card-price">€3.15</p>
+                        <button class="add-to-card">Add to card</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer context-dark font-small bg-dark pt-3" style="color: white;">
+        <section class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 mt-md-3 mt-3 align-self-center">
+                    <h3 class="text-uppercase">Artaholka</h3>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="our-team.html">Our team</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="help-center.html">Help center</a></li>
+                        <li><a href="our-rules.html">Our rules</a></li>
+                        <li><a href="terms-conditions.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!">Seller</a></li>
+                        <li><a href="#!">Buyer</a></li>
+                        <li><a href="profile.html">Profile</a>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-copyright text-center py-3">
+            &copy; 2019 Artaholka. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+</body>
+
+</html>

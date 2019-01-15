@@ -8,7 +8,7 @@ body {
     padding: 0;
     border: 0;
     outline: 0;
-    margin-bottom: 150px;
+    margin-bottom: 160px;
 }
 
 * { 
@@ -24,7 +24,6 @@ body {
     
     margin: 0 auto;
     padding: 0;
-    /* background-color: lightgray; */
 }
 
 .categories {
@@ -111,36 +110,6 @@ body {
 .slideshow-card>.card-body>.card-text {
     font-size: 12px;
 }
-
-/* .prev, .next {
-    font-size: 0;
-    line-height: 0;
-
-    position: absolute;
-    top: 50%;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-      opacity: 0.7;
-  } */
-
-  /* Product description */
 
 .product-created-date {
     font-style: italic;
@@ -229,4 +198,28 @@ body {
 .form-container {
     width: 50%;
     margin: auto;
+}
+
+.info-card {
+    padding: 5px 5px 5px 5px;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.8);
+    border-radius: 2px;
+}
+
+.field-label {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field-value {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
