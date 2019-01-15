@@ -142,15 +142,17 @@
                             <div class="left-section">
                                 <div class="product-image">
                                     <!-- Product image -->
-                                    <img src="img/art1.jpg" alt="Nemo" id="p-image">
+                                    <!-- <img src="img/art1.jpg" onclick="getImg()" alt="Nemo" id="p-image"> -->
+                                    <a href="#" onclick="getText(event)" id="read" class="btn btn-outline-success">Read the poem</a>
+                                    <input type="hidden" name="product-content" value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea harum praesentium dicta? Odio earum quae blanditiis officia adipisci reprehenderit quo ullam explicabo debitis, eius aut assumenda quibusdam sapiente unde! Sapiente consequuntur fugit quo saepe dolores fugiat excepturi maxime adipisci nemo aliquam dignissimos, itaque quidem doloremque esse architecto, laudantium voluptatibus necessitatibus quis tempore. Itaque provident architecto magni omnis quae maxime iste temporibus eaque sint alias id quas, facilis consequatur, a minima. Hic illum, inventore aspernatur ullam odit sed voluptas numquam voluptate provident autem. Nostrum quibusdam expedita unde sunt dolorum eveniet accusamus quo esse, harum obcaecati labore id, itaque sapiente voluptatem, aspernatur vitae. Blanditiis ea provident dolorum enim tenetur, hic voluptatum ab voluptates officiis corrupti et? Natus sequi vitae voluptate pariatur ullam.">
                                     <!-- The Modal -->
                                     <div id="p-modal" class="modal">
-
                                         <!-- The Close Button -->
                                         <span class="close">&times;</span>
 
                                         <!-- Modal Content (The Image) -->
                                         <img class="modal-content" id="img01">
+                                        <p class="modal-content-text" id="txt001"></p>
 
                                         <!-- Modal Caption (Image Text) -->
                                         <div id="caption"></div>
@@ -241,5 +243,7 @@
     <script type="text/javascript" src="slick/slick.js"></script>
     <script src="./js/slideshow.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-text.js"></script>
 </body>
 </html>
+

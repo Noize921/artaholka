@@ -211,3 +211,13 @@ body {
 .product-author:hover {
     text-decoration: none;
 }
+
+#read {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    max-width: 95%;
+    height: 40px;
+    display: block;
+}
